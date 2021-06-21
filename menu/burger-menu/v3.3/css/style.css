@@ -1,0 +1,22 @@
+/*
+ Menu panel
+**/
+/*@import 'menu-pane.css';*/
+@import url("menu-pane.css");
+/*
+ END Menu panel
+**/
+/*
+ Hamburger control
+**/
+/*@import './hamburger-control.css';*/
+@import url("hamburger-control.css");
+/*
+ END Hamburger control
+**/
+
+
+body * {
+  margin: 0;
+  padding: 0;
+}
