@@ -1,0 +1,139 @@
+
+.nav-bar * {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+
+.nav-bar > ul {
+  display: flex;
+  justify-content: center;
+}
+.nav-bar > ul > li > a {
+  text-transform: uppercase;
+}
+.nav-bar ul li a {
+  color: black;
+  display: block;
+  padding: 15px;
+/*  border: 1px solid red;*/
+  text-decoration: none;
+}
+.nav-bar > ul li {
+  position: relative;
+  width: 150px;
+}
+.nav-bar li > ul {
+  position: absolute;
+}
+.nav-bar li ul li ul {
+  position: absolute;
+  left: 150px;
+  top: 0;
+}
+.nav-bar ul ul {
+  display: none;
+}
+.nav-bar li:hover > ul {
+  display: block;
+}
+.nav-bar li > a {
+  background-color: #d0bc6b;
+  margin: 3px;
+  border-radius: 4px;
+/*  transition: all .4s ease-in-out;*/
+}
+.nav-bar li a {
+  transition: all 2s;
+  transition: all 2s ease-in-out;
+}
+.nav-bar li a:hover {
+  transition: all 2s;
+  transition: all 2s ease-in-out;
+  padding-left: 20px;
+}
+/*
+.nav-bar > ul > li > ul > li {
+  margin-top: 5px;
+  margin-left: 0;
+}
+.nav-bar ul li {
+  margin: 0 0 5px 5px;
+}
+*/
+
+
+/*
+.nav-bar ul li {
+  list-style: none;
+  display: block;
+}
+
+.nav-bar > ul > li > ul > li {
+  margin-top: 1px;
+  margin-left: 0;
+}
+.nav-bar ul li {
+  margin: 0 0 1px 1px;
+}
+
+.nav-bar > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar > ul > li > a {
+  text-transform: uppercase;
+}
+.nav-bar > ul li a {
+  display: block;
+  background: #ececed;
+  padding: 15px 30px;
+  font-size: 14px;
+  color: #454547;
+  text-decoration: none;
+  transition: all .5s ease;
+  border-radius: 4px;
+}
+.nav-bar > ul li {
+  position: relative;
+}
+.nav-bar li a:hover {
+  background: #454547;
+  color: #fafafa;
+  box-shadow: 1px 3px 10px -5px black;
+  transition: all .5s ease;
+  padding-left: 30px;
+}
+*/
+
+
+/* sub menu */
+/*
+.nav-bar li ul {
+  position: absolute;
+  min-width: 150px;
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.nav-bar li > ul li a {
+  padding: 10px;
+  text-transform: capitalize;
+  background: #e4e4e5;
+}
+
+.nav-bar li > ul ul {
+  position: absolute;
+  right: -150px;
+  top: 0;
+}
+
+.nav-bar li:hover > ul {
+  display: block;
+  transition: all 5s ease-in-out;
+}
+*/

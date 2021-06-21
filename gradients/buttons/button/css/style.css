@@ -1,0 +1,167 @@
+.button {
+  display: inline-block;
+  zoom: 1;
+  /* масштабирование и *display = ie7 хак для отображения display:inline-block */
+  *display: inline;
+  vertical-align: baseline;
+  margin: 0 2px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% 'Roboto', sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  /*        -webkit-border-radius: .5em; */
+  /*        -moz-border-radius: .5em;*/
+  border-radius: .5em;
+  /*        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+  /*        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.button:hover {
+  text-decoration: none;
+  transition: all 2s;
+}
+
+.button:active {
+  //* смещение на 1px вниз *//
+  position: relative;
+  top: 1px;
+}
+
+
+/*
+Orange ***/
+.orange {
+  color: #fef4e9;
+  border: solid 1px #da7c0c;
+  background: #f78d1d;
+  /*цвет фона кнопки для браузеров без поддержки CSS3*/
+  background-image: linear-gradient(to bottom, #faa51a, #f47a20);
+}
+
+.orange:hover {
+  background: #f47c20;
+  background-image: linear-gradient(to bottom, #f88e11, #f06015);
+}
+
+.orange:active {
+  color: #fcd3a5;
+  background-image: linear-gradient(to bottom, #f47a20, #faa51a);
+}
+
+
+/*
+gradient on top lighter than on bottom
+Blue ***/
+.blue {
+  color: #bddbff;
+  border: solid 1px #76a6ff;
+  /*  background: */
+  background: linear-gradient(#00d4ff 10%, #079ae9 100%);
+}
+.blue:hover {
+  background: blue;
+  background: linear-gradient(#00d4ff 40%, #079ae9 100%);
+/*  background: linear-gradient(#00bae0 40%, #0182c7 100%)*/
+}
+.blue:active {
+  color: #bddbff;
+/*  background-image: linear-gradient(#5cc6ff, #779ef5);*/
+  background: linear-gradient(#079ae9 20%, #00d4ff 100%);
+}
+
+/*
+$palette-name: '#15 Dual Polar'
+$palette-color1: #7b7b7b;
+$palette-color2: #4c4c4c;
+Grey*/
+.grey {
+  color: #d0d0d0;
+  border: solid 1px #5d5f64;
+  background: linear-gradient(#7b7b7b 10%, #4c4c4c 100%);
+}
+
+.grey:hover {
+  background: blue;
+  background: linear-gradient(#7b7b7b 40%, #4c4c4c 100%);
+/*  background: linear-gradient(#00bae0 40%, #0182c7 100%)*/
+}
+.grey:active {
+  color: #bebebe;
+  background: linear-gradient(#4c4c4c 20%, #7b7b7b 100%);
+}
+
+
+/*
+#a194c0
+#877aa4
+#6d618a
+#554a71
+#3d3358
+#261e40
+
+$palette-color1: #d7c6ff;
+$palette-color2: #bbaaea;
+$palette-color3: #9f90cd;
+$palette-color4: #8576b2;
+$palette-color5: #6b5e97;
+$palette-color6: #52467d;
+Purple ***/
+.purple {
+  color: #e4dcf7;
+  border: solid 1px #78689f;
+  background: linear-gradient(#a194c0 10%, #877aa4 100%);
+}
+
+.purple:hover {
+  background: blue;
+  background: linear-gradient(#a194c0 40%, #877aa4 100%);
+/*  background: linear-gradient(#00bae0 40%, #0182c7 100%)*/
+}
+.purple:active {
+  color: #d9d0ed;
+  background: linear-gradient(#877aa4 20%, #a194c0 100%);
+}
+
+.purple2 {
+  color: #d7c6ff;
+  border: solid 1px #8576ac;
+  background: linear-gradient(#0f0 10%, #6b5e97 100%);
+}
+
+.purple2:hover {
+  background: blue;
+  background: linear-gradient(#9f90cd 40%, #6b5e97 100%);
+/*  background: linear-gradient(#00bae0 40%, #0182c7 100%)*/
+}
+.purple2:active {
+  color: #d7c6ff;
+  background: linear-gradient(#6b5e97 20%, #9f90cd 100%);
+}
+
+/*
+#99a5b2
+#7f8a97
+#66717d
+#4e5964
+#37414c
+#212b36
+ */
+.purple2 {
+  color: #d7c6ff;
+  border: solid 1px #8576ac;
+  background: linear-gradient(#9f90cd 10%, #6b5e97 100%);
+}
+
+.purple2:hover {
+  background: blue;
+  background: linear-gradient(#9f90cd 40%, #6b5e97 100%);
+/*  background: linear-gradient(#00bae0 40%, #0182c7 100%)*/
+}
+.purple2:active {
+  color: #d7c6ff;
+  background: linear-gradient(#6b5e97 20%, #9f90cd 100%);
+}

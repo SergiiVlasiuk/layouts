@@ -1,0 +1,25 @@
+header {
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+.menu a {
+  color: #0f0f0a;
+}
+
+.menu .fa {
+  padding: 10px;
+/*
+  height: 2rem;
+  width: 2rem;
+*/
+}
+
+ul.menu,
+.menu li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li a {
+  display: inline-block;
+}

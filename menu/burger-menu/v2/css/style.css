@@ -1,0 +1,61 @@
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 45px;
+  opacity: 0;
+  height: 45px;
+  display: inline-block;
+/*  border: 3px solid red;*/
+}
+
+.hamburger-icon {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  left: 5vw;
+  padding-bottom: 2vh;
+}
+.hamburger-icon span {
+  height: 5px;
+  width: 40px;
+  background-color: black;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.5s ease-in-out;
+  transform: none;
+}
+
+/*
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+*/
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+/*  transform: translate(0%, 190%) rotate(-45deg);*/
+  transform: translate(0%, 95%) rotate(-45deg);
+/*  transform: rotate(-45deg);*/
+/*  background-color: white;*/
+  background-color: red;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+/*  transform: rotate(45deg);*/
+  transform: translate(0%, -95%) rotate(45deg);
+/*  background-color: white;*/
+  background-color: red;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1),
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4){
+  opacity: 0;
+}
